@@ -1,0 +1,7 @@
+python-telegram-bot
+pillow
+pyzbar
+
+opencv-python~=4.6.0.66
+pandas~=1.5.1
+aiogram~=2.22.2
