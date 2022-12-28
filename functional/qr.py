@@ -15,12 +15,16 @@ def read_qr_code(filename):
         img = cv2.imread(filename)
         detect = cv2.QRCodeDetector()
         value, points, straight_qrcode = detect.detectAndDecode(img)
-        return value
+        if value:
+            return value
+        else:
+            return False
     except:
-        return 'Ошибка при считывании QR-кода'
-
+        return False
 
 # print(read_qr_code('/home/janarbek/Рабочий стол/dipl/QR-Scanner-Bot/id.jpg'))
+#
+# print(read_qr_code('/home/janarbek/Рабочий стол/dipl/QR-Scanner-Bot/faces/eda.jpg'))
 
 # import hashlib
 # import qrcode
