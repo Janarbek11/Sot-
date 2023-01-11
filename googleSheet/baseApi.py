@@ -15,7 +15,7 @@ ind = 0
 sht1 = gc.open_by_key(SAMPLE_SPREADSHEET_ID)
 names = sht1.sheet1.get('A:A')
 # names = sht1.sheet1.get('B1')
-name = 'Кенешбеков Жанарбек Уланбекович'
+name = ''
 # print(names[1][0] == name)
 # print(names)
 
